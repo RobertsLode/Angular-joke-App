@@ -1,0 +1,27 @@
+<form class="planner--form" [formGroup]="jokeForm" action="">
+  <label class="input--label" for="">
+    The joke
+    <input class="input" #taskInput [formControlName]="'joke'" type="text" />
+  </label>
+  <small
+    *ngIf="
+      jokeForm.get('joke')?.touched &&
+      jokeForm.get('joke')?.hasError('required')
+    "
+  >
+    <h3 class="h3">This field is rquired</h3>
+  </small>
+  <label class="input--label" for="">
+    The Punchline
+    <input class="input" [formControlName]="'punchLine'" type="text" />
+  </label>
+  <small
+    *ngIf="
+      jokeForm.get('punchLine')?.touched &&
+      jokeForm.get('punchLine')?.hasError('required')
+    "
+  >
+    <h3 class="h3">This field is rquired</h3>
+  </small>
+  <button class="button" (click)="addJoke()" type="button">Submit</button>
+</form>

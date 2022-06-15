@@ -1,0 +1,46 @@
+.planner--form {
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    width: 1000px;
+    background-color: rgb(36, 206, 163);
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+.input--label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+    font-size: 1.3rem;
+}
+
+.input {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+}
+
+.button {
+    padding: 7px 10px;
+    background-color: darkolivegreen;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        outline: rgb(182, 182, 7) 4px solid; 
+    }
+    &:active {
+        background-color: rgb(173, 150, 16);
+    }
+}
+.h3 {
+    color: rgb(122, 0, 0);
+    text-decoration: underline;
+}

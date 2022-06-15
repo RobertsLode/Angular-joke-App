@@ -1,0 +1,8 @@
+<div class="planner--list">
+  <app-planner-card class="planner--card-main"
+    *ngFor="let joke of jokes; let i = index"
+    [joke]="joke"
+    (deleteTaskEvent)="deleteTask(i)"
+  >
+  </app-planner-card>
+</div>

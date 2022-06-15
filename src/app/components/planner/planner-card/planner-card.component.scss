@@ -1,0 +1,60 @@
+.planner--card-main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+
+.button--box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.card--text {
+    font-size: large;
+    max-width: 980px;
+}
+
+.show--button {
+    padding: 7px 10px;
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        outline: rgb(182, 182, 7) 4px solid; 
+    }
+   &:active {
+    background-color: rgb(173, 150, 16);
+   }
+}
+
+.delete--button {
+    padding: 7px 10px;
+    background-color: rgb(180, 8, 8);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        outline: rgb(182, 182, 7) 4px solid; 
+    }
+   &:active {
+    background-color: rgb(173, 150, 16);
+   }
+}
+
+.joke--box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}

@@ -1,0 +1,22 @@
+<div class="planner--card-main">
+  <span class="card--text"> > {{ joke?.joke }}</span>
+
+  <span class="card--text" *ngIf="showPunchline"> > {{ joke?.punchLine }} </span>
+  <div class="button--box">
+    <button
+      class="show--button"
+      *ngIf="!showPunchline"
+      (click)="toggleShowPunchline()"
+    >
+      Show the punchline!
+    </button>
+    <button
+      class="show--button"
+      *ngIf="showPunchline"
+      (click)="toggleShowPunchline()"
+    >
+      Hide the punchline!
+    </button>
+    <button class="delete--button" (click)="deleteTask()">Delete</button>
+  </div>
+</div>

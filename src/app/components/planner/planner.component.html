@@ -1,0 +1,7 @@
+<div class="planner--main">
+  <app-planner-form (addJokeEvent)="addJoke($event)"> </app-planner-form>
+  <app-planner-list class="planner--list-main"
+    (deleteTaskEvent)="deleteTask($event)"
+    [jokes]="jokes"
+  ></app-planner-list>
+</div>
